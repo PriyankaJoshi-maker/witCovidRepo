@@ -56,7 +56,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```node.js SDK
+```bash
+node.js SDK
 ```
 
 ### Installing
@@ -79,7 +80,7 @@ https://covid-health-ally.eu-gb.cf.appdomain.cloud/ - this is the expected URL f
 ## Authors
 
 See the list of [contributors] who participated in this project:
-* **Nivedita Dey ** 
-* **Garima Jain ** 
-* **Mitali Srivastava ** 
-* **Priyanka Joshi ** 
+* **Nivedita Dey** 
+* **Garima Jain** 
+* **Mitali Srivastava** 
+* **Priyanka Joshi** 
