@@ -1,0 +1,353 @@
+<!--
+=========================================================
+* Paper Dashboard 2 - v2.0.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-dashboard-2
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Covid Health Ally
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet"/>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <div class="logo">
+        <a class="simple-text logo-mini">
+          <div class="logo-image-small">
+            <img src="../assets/img/logo-small.png">
+          </div>
+          <!-- <p>CT</p> -->
+        </a>
+        <a class="simple-text logo-normal">
+          Covid Health Ally
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li>
+            <a href="./dashboard.html">
+              <i class="nc-icon nc-bank"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+		  <li class="active ">
+            <a href="./user.html">
+              <i class="nc-icon nc-single-02"></i>
+              <p>Dietary Reference Intake Calculator</p>
+            </a>
+          </li>
+		  <li>
+            <a href="./precautionaryMeasure.html">
+              <i class="nc-icon nc-single-02"></i>
+              <p>Precautionary measures</p>
+            </a>
+          </li>
+		  <li>
+            <a href="./safetyMeasure.html">
+              <i class="nc-icon nc-single-02"></i>
+              <p>Safety measures for food delivery</p>
+            </a>
+          </li>
+		  <li>
+            <a href="./recommFood.html">
+              <i class="nc-icon nc-single-02"></i>
+              <p>Recommended food items</p>
+            </a>
+          </li>
+		  <li>
+            <a href="./highRisk.html">
+              <i class="nc-icon nc-single-02"></i>
+              <p>People at higher risk</p>
+            </a>
+          </li>
+		  <li>
+            <a href="./mentalHealth.html">
+              <i class="nc-icon nc-single-02"></i>
+              <p>Mental health fitness</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:;">Dietary Reference Intake Calculator</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <!--<div class="collapse navbar-collapse justify-content-end" id="navigation">
+          
+          </div>-->
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-user">
+              <!--<div class="image">
+                <img src="../assets/img/damir-bosnjak.jpg" alt="...">
+              </div>-->
+              <div class="card-body">
+                <form>
+				  <div class="form-group">
+					<label for="exampleFormControlSelect1">Age</label>
+					<select class="form-control" id="age">
+					</select>
+				  </div>
+				  <div class="form-group">
+					<label for="exampleFormControlSelect1">Weight(in kgs)</label>
+					<select class="form-control" id="weight">
+					</select>
+				  </div>
+				  <div class="form-group">
+					<label for="exampleFormControlSelect1">Height(in cms)</label>
+					<select class="form-control" id="height">
+					</select>
+				  </div>
+				  <div class="form-group">
+					<label for="exampleFormControlSelect1">Activity Level</label>
+					<select class="form-control" id="activity">
+						<option value="Sedentary">Sedentary</option>
+						<option value="Low Active">Low Active</option>
+						<option value="Active">Active</option>
+						<option value="Very Active">Very Active</option>
+					</select>
+				  </div>
+					<fieldset class="form-group">
+						<div class="row">
+						  <legend class="col-form-label col-sm-4 pt-0">Gender</legend>
+						  <div class="col-sm-6">
+							<div class="form-check">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Male">
+							  <label class="form-check-label" for="gridRadios1">
+								Male
+							  </label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Female">
+							  <label class="form-check-label" for="gridRadios2">
+								Female
+							  </label>
+							</div>
+						  </div>
+						</div>
+					</fieldset>
+				  <div class="form-group">
+					<button type="button" id="calcButton" data-toggle="modal" data-target="#exampleModal" onclick="calculateBMI();">Calculate</button>
+				  </div>
+				  <!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">You Entered</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true"></span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<div class="table-responsive">
+						  <table class="table">
+							<tbody>
+								<tr>
+								<th>Gender</th>
+								<td><input type="text" id="genderId" disabled/></td>
+								</tr>
+								<tr>
+								<th>Age</th>
+								<td><input type="text" id="ageId" disabled/></td>
+								</tr>
+								<tr>
+								<th>Height</th>
+								<td><input type="text" id="heightId" disabled/></td>
+								</tr>
+								<tr>
+								<th>Weight</th>
+								<td><input type="text" id="weightId" disabled/></td>
+								</tr>
+								<tr>
+								<th>Activity Level</th>
+								<td><input type="text" id="activityLevelId" disabled/></td>
+								</tr>
+								<tr>
+								<th>Body Mass Index</th>
+								<td><input type="text" id="bodyId" disabled/></td>
+								</tr>
+							</tbody>
+						  </table>
+						</div>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="displayNutrients();">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<!--End-->
+				</form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card ">
+					  <div class="card-header ">
+						<h5 class="card-title">Average calorie needs per day by age, sex and moderate physical activity level</h5>
+					  </div>
+					  <div class="card-body ">
+						<canvas id="userChartHours" width="400" height="100"></canvas>
+					  </div>
+					  <div class="card-footer ">
+						<div class="legend">
+						  <i class="fa fa-circle text-primary"></i> Female
+						  <i class="fa fa-circle text-warning"></i> Male
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+          </div>
+		<div class="row" id="nutrientsDiv">
+		  <div class="col-sm-6">
+			<div class="card">
+			  <div class="card-body" style="margin-left:3%">
+				<h5 class="card-title">Macronutrients</h5>
+				<table class="results-table">
+					<tbody><tr><th>Macronutrient</th><th>Recommended Intake per day</th></tr>
+					<tr><td>Carbohydrate</td><td>225 - 325 grams
+				</td></tr>
+				<tr><td class="macronutrient-indented">Total Fiber</td><td>25 grams</td></tr>
+				<tr><td>Protein</td><td>45 grams</td></tr>
+				<tr><td>Fat</td><td>44 - 78 grams
+				</td></tr>
+				<tr><td class="macronutrient-indented">Saturated fatty acids</td><td>As low as possible while consuming a nutritionally adequate diet.</td></tr>
+				<tr><td class="macronutrient-indented"><em>Trans</em> fatty acids</td><td>As low as possible while consuming a nutritionally adequate diet.</td></tr>
+				<tr><td class="macronutrient-indented">α-Linolenic Acid</td><td>1.1 grams
+				</td></tr>
+				<tr><td class="macronutrient-indented">Linoleic Acid</td><td>12 grams
+				</td></tr>
+				<tr><td class="macronutrient-indented">Dietary Cholesterol</td><td>As low as possible while consuming a nutritionally adequate diet.</td></tr>
+				<tr><td>Total Water</td><td>2.7 Liters (about 11 cups)
+				</td></tr>
+				  </tbody></table>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-sm-6">
+			<div class="card">
+			  <div class="card-body" style="margin-left:3%">
+				<h5 class="card-title">Vitamins</h5>
+				<table class="results-table">
+						<tbody><tr><th>Vitamin</th><th>Recommended Intake per day</th><th>Tolerable UL Intake per day</th></tr>
+						<tr><td><a href="https://ods.od.nih.gov/factsheets/vitamina.asp" title="Read a fact sheet about Vitamin A" target="_blank" class="ext" rel="noopener noreferrer">Vitamin A<span class="ext" aria-label="(link is external)"></span></a></td><td>700 mcg</td><td>3,000 mcg
+					</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/" title="Read a fact sheet about Vitamin C" target="_blank" class="ext" rel="noopener noreferrer">Vitamin C<span class="ext" aria-label="(link is external)"></span></a></td><td>75 mg</td><td>2,000 mg</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/vitamind.asp" title="Read a fact sheet about Vitamin D" target="_blank" class="ext" rel="noopener noreferrer">Vitamin D<span class="ext" aria-label="(link is external)"></span></a></td><td>15 mcg</td><td>100 mcg</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/vitaminb6.asp" title="Read a fact sheet about Vitamin B6" target="_blank" class="ext" rel="noopener noreferrer">Vitamin B<sub>6</sub><span class="ext" aria-label="(link is external)"></span></a></td><td>1.3 mg</td><td>100 mg</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/vitamine.asp" title="Read a fact sheet about Vitamin E" target="_blank" class="ext" rel="noopener noreferrer">Vitamin E<span class="ext" aria-label="(link is external)"></span></a></td><td>15 mg</td><td>1,000 mg
+					</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional" title="Read a fact sheet about Vitamin K" target="_blank" class="ext" rel="noopener noreferrer">Vitamin K<span class="ext" aria-label="(link is external)"></span></a></td><td>90 mcg</td><td>ND</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional" title="Read a fact sheet about Thiamin" target="_blank" class="ext" rel="noopener noreferrer">Thiamin<span class="ext" aria-label="(link is external)"></span></a></td><td>1.1 mg</td><td>ND</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/vitaminb12.asp" title="Read a fact sheet about Vitamin B12" target="_blank" class="ext" rel="noopener noreferrer">Vitamin B<sub>12</sub><span class="ext" aria-label="(link is external)"></span></a></td><td>2.4 mcg</td><td>ND</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/Riboflavin-HealthProfessional" title="Read a fact sheet about Riboflavin" target="_blank" class="ext" rel="noopener noreferrer">Riboflavin<span class="ext" aria-label="(link is external)"></span></a></td><td>1.1 mg</td><td>ND</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/folate.asp" title="Read a fact sheet about Folate" target="_blank" class="ext" rel="noopener noreferrer">Folate<span class="ext" aria-label="(link is external)"></span></a></td><td>400 mcg</td><td>1,000 mcg
+					</td></tr>
+					<tr><td><a href="https://www.nlm.nih.gov/medlineplus/ency/article/002409.htm" title="Read a fact sheet about Niacin" target="_blank" class="ext" rel="noopener noreferrer">Niacin<span class="ext" aria-label="(link is external)"></span></a></td><td>14 mg</td><td>20 mg
+					</td></tr>
+					<tr><td><a href="https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/" title="Read a fact sheet about Choline" target="_blank" class="ext" rel="noopener noreferrer">Choline<span class="ext" aria-label="(link is external)"></span></a></td><td>0.425 g</td><td>3.5 g</td></tr>
+					<tr><td><a href="https://www.nlm.nih.gov/medlineplus/ency/article/002410.htm" title="Read a fact sheet about Pantothenic Acid" target="_blank" class="ext" rel="noopener noreferrer">Pantothenic Acid<span class="ext" aria-label="(link is external)"></span></a></td><td>5 mg</td><td>ND</td></tr>
+					<tr><td><a href="https://www.nlm.nih.gov/medlineplus/ency/article/002410.htm" title="Read a fact sheet about Biotin" target="_blank" class="ext" rel="noopener noreferrer">Biotin<span class="ext" aria-label="(link is external)"></span></a></td><td>30 mcg</td><td>ND</td></tr>
+					<tr><td><a href="http://lpi.oregonstate.edu/mic/dietary-factors/phytochemicals/carotenoids" title="Read a fact sheet about Carotenoids" target="_blank" class="ext" rel="noopener noreferrer">Carotenoids<span class="ext" aria-label="(link is external)"></span></a></td><td>NA</td><td>ND
+					</td></tr> 
+					  </tbody></table>
+			  </div>
+			</div>
+		  </div>
+		</div>
+        </div>
+
+      </div>
+      <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+          <!--<div class="row">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="https://www.creative-tim.com" target="_blank">Creative Tim</a></li>
+                <li><a href="https://www.creative-tim.com/blog" target="_blank">Blog</a></li>
+                <li><a href="https://www.creative-tim.com/license" target="_blank">Licenses</a></li>
+              </ul>
+            </nav>
+            <div class="credits ml-auto">
+              <span class="copyright">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
+              </span>
+            </div>
+          </div>-->
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script><!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script src="../assets/demo/user.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+</body>
+
+</html>
