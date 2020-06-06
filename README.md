@@ -32,7 +32,7 @@ Since high immunity is the best way to stay safe to fight COVID-19, we have deve
 [![Watch the video]]
 
 ## The FlowChart
-![FlowChart](COVID_Health_Ally_App Flowchart.jpg)
+![FlowChart](COVID_Health_Ally_App_Flowchart.jpg)
 
 
 ## Long description
