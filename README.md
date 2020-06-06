@@ -8,6 +8,7 @@
 
 1. [Short description](#short-description)
 1. [Demo video](#demo-video)
+1. [The FlowChart](#the-FlowChart)
 1. [Long description](#long-description)
 1. [Project roadmap](#project-roadmap)
 1. [Getting started](#getting-started)
@@ -29,6 +30,9 @@ Since high immunity is the best way to stay safe to fight COVID-19, we have deve
 ## Demo video
 
 [![Watch the video]]
+
+## The FlowChart
+![FlowChart](COVID_Health_Ally_App Flowchart.jpg)
 
 
 ## Long description
