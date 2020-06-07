@@ -29,7 +29,7 @@ Since high immunity is the best way to stay safe to fight COVID-19, we have deve
 
 ## Demo video
 
-[![Watch the video]](https://youtu.be/vOgCOoy_Bx0)
+[![Watch the video](CovideWarriors.jpg)](https://youtu.be/jIlLf8b0B-k)
 
 ## The FlowChart
 ![FlowChart](COVID_Health_Ally_App_Flowchart.jpg)
